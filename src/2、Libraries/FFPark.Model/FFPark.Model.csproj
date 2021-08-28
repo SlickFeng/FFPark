@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="微信\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FFPark.Core\FFPark.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FFPark.Model.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

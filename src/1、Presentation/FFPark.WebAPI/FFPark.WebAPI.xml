@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FFPark.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:FFPark.WebAPI.Controllers.Admin.AdminRoleController">
+            <summary>
+            后台-用户管理
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.AdminRoleController.RaiseRole(FFPark.Model.User.BaseRoleModel)">
+            <summary>
+            新增内部角色
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.AdminRoleController.KeepRole(FFPark.Model.User.BaseRoleModel)">
+            <summary>
+            修改内部角色
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.AdminRoleController.GetBaseRole(FFPark.Model.PageModelDto)">
+            <summary>
+            角色列表
+            </summary>
+            <param name="pageModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.Admin.AdminUserController">
+            <summary>
+            后台-用户管理
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.AdminUserController.RaiseUser(FFPark.Model.User.BaseUserModel)">
+            <summary>
+            新增内部用户
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.AdminUserController.KeepUser(FFPark.Model.User.BaseUserWithIdModel)">
+            <summary>
+            修改内部用户信息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.AdminUserController.GetBaeUserInfo">
+            <summary>
+            获取用户基本信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.Admin.Park.AdCurrencyPresentationController">
+            <summary>
+            后台-通用广告
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.AdCurrencyPresentationController.RaiseAdCurrencyPresentation(FFPark.Model.AdCurrencyPresentationModel)">
+            <summary>
+            新增通用广告
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.AdCurrencyPresentationController.KeepAdCurrencyPresentation(FFPark.Model.AdCurrencyPresentationModelWithId)">
+            <summary>
+            修改通用广告
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.AdCurrencyPresentationController.GetAdCurrencyPresentation(System.Int32)">
+            <summary>
+            通用广告--详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.AdCurrencyPresentationController.GetAdCurrencyPresentation(FFPark.Model.PageModelDto)">
+            <summary>
+            通用广告列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.Admin.Park.AdPositionController">
+            <summary>
+            后台-通用广告位置
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.AdPositionController.RaiseAdPosition(FFPark.Model.AdPositionModel)">
+            <summary>
+            新增通用广告位置
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.Admin.Park.ParkController">
+            <summary>
+            后台-车场管理
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.ParkController.RaisePark(FFPark.Model.Park.BaseParkModel)">
+            <summary>
+            新增车场
+            </summary>
+            <param name="model"></param>                             
+            <returns></returns>                   
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.ParkController.KeepPark(FFPark.Model.Park.BaseParkModel)">
+            <summary>
+            修改车场
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.ParkController.SetAdminPark(System.Int32,System.Int32)">
+            <summary>
+            设置停车场管理员
+            </summary>
+            <param name="userid">停车场管理员id</param>
+            <param name="parkid">停车场Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Park.ParkController.GetBaseParkList(FFPark.Model.Park.BaseParkQueryDto)">
+            <summary>
+            车场列表
+            </summary>
+            <param name="pageModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.Admin.Pay.PayChannelController">
+            <summary>
+            后台-通道管理
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Pay.PayChannelController.RaisePayChannel(FFPark.Model.PayChannelModel)">
+            <summary>
+            新增通道
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Pay.PayChannelController.KeepPayChannel(FFPark.Model.PayChannelModelWithId)">
+            <summary>
+            修改通道
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Pay.PayChannelController.GetPayChannel(System.Int32)">
+            <summary>
+            通道详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.Pay.PayChannelController.GetPayChannelList(FFPark.Model.PageModelDto)">
+            <summary>
+            通道列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.Admin.NavigationController">
+            <summary>
+            后台-菜单管理
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.NavigationController.RaiseNavigationModule(FFPark.Model.BaseNavigationModuleModel)">
+            <summary>
+            新增左侧导航菜单
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.NavigationController.KeepBaseNavigationModuleModel(FFPark.Model.BaseNavigationModuleModel)">
+            <summary>
+            修改左侧菜单
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.NavigationController.GetNavigationModule">
+            <summary>
+            左侧导航菜单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.Admin.SettingController">
+            <summary>
+            系统设置
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.SettingController.CacheWrite(FFPark.Model.CacheConfigModel)">
+            <summary>
+            写入内存缓存配置参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.SettingController.CacheRead">
+            <summary>
+            读取内存缓存配置参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.SettingController.Restart">
+            <summary>
+            系统重启,只要重新请求Url 网站即被激活了
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.SettingController.WebChatConfigRead">
+            <summary>
+            读取微信相关配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.Admin.SettingController.WebChatConfigWrite(FFPark.Model.WebChatModel)">
+            <summary>
+            保存微信相关配置信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.NoticeController">
+            <summary>
+            小程序消息推送
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.NoticeController.GetSubscription(System.String)">
+            <summary>
+            根据标题获取模板Id
+            </summary>
+            <param name="templateName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.WebChatNoticeController">
+            <summary>
+            微信小程序管理
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.WebChatNoticeController.ToAsyncSmallNotice">
+            <summary>
+            小程序同步
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.WebChatNoticeController.SmallProgramLogin(System.String)">
+            <summary>
+            微信小程序登录
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.WxAdCurrencyPresentationController">
+            <summary>
+            小程序管理-通用广告
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.WxAdCurrencyPresentationController.GetAdCurrency(System.String)">
+            <summary>
+            获取通用广告
+            </summary>
+            <param name="name">广告位置</param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.AuthController">
+            <summary>
+            授权接口
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.AuthController.Authenticate(FFPark.WebAPI.Models.SignModel)">
+            <summary>
+            PC 登录 获取token
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.AuthController.RefreshToken(System.String)">
+            <summary>
+            刷新Token
+            </summary>
+            <param name="refreshToken">refreshToken </param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.AuthController.LayOut(System.String)">
+            <summary>
+            注销token
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.SpecialDiscountController">
+             <summary>
+            车主/PC 管理优惠券
+             </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.SpecialDiscountController.RaiseDiscount(FFPark.Model.SpecialDiscountModel)">
+            <summary>
+            新增优惠券
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.CarSpecialDiscountController">
+            <summary>
+            车主小程序 -领取优惠券
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.CarSpecialDiscountController.PullDown(System.Int32)">
+            <summary>
+            车主通过小程序领取优惠券
+            </summary>
+            <param name="id">优惠券Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:FFPark.WebAPI.Controllers.LicenseBindController">
+            <summary>
+            车主小程序--车牌
+            </summary>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.LicenseBindController.Bind(System.String)">
+            <summary>
+            新增车牌绑定
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Controllers.LicenseBindController.KeepBind(System.String)">
+            <summary>
+            修改车牌绑定
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Infrastructure.Mapper.Extensions.MappingExtensions.ToModel``1(FFPark.Core.BaseEntity)">
+            <summary>
+            实体转Model
+            </summary>
+            <typeparam name="TModel">Model Type</typeparam>
+            <param name="entity">Entity to map from</param>
+            <returns>Mapped Model</returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Infrastructure.Mapper.Extensions.MappingExtensions.ToModel``2(``0,``1)">
+            <summary>
+            Execute a mapping from the entity to the existing model
+            </summary>
+            <typeparam name="TEntity">Entity type</typeparam>
+            <typeparam name="TModel">Model type</typeparam>
+            <param name="entity">Entity to map from</param>
+            <param name="model">Model to map into</param>
+            <returns>Mapped model</returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Infrastructure.Mapper.Extensions.MappingExtensions.ToModelList``2(System.Collections.Generic.List{``0})">
+            <summary>
+            实体转Model/Dto
+            </summary>
+            <typeparam name="TModel"></typeparam>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Infrastructure.Mapper.Extensions.MappingExtensions.ToEntityList``2(System.Collections.Generic.List{``0})">
+            <summary>
+            Dto/Model-->Entity
+            </summary>
+            <typeparam name="TModel "></typeparam>
+            <typeparam name="TEntity"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FFPark.WebAPI.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            注入
+            </summary>
+            <param name="builder"></param>
+        </member>
+    </members>
+</doc>

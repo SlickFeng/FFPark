@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>f3042e85-25a7-49bf-837b-30e57097eb5f</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.24" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.24" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.24" />
+    <PackageReference Include="IdentityModel.OidcClient" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2、Libraries\FFPark.Core\FFPark.Core.csproj" />
+    <ProjectReference Include="..\..\2、Libraries\FFPark.Entity\FFPark.Entity.csproj" />
+    <ProjectReference Include="..\..\2、Libraries\FFPark.Model\FFPark.Model.csproj" />
+    <ProjectReference Include="..\..\2、Libraries\FFPark.Services\FFPark.Services.csproj" />
+    <ProjectReference Include="..\FFPark.Web.Framework\FFPark.Web.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Landlord\" />
+    <Folder Include="Controllers\Renters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FFPark.WebAPI.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

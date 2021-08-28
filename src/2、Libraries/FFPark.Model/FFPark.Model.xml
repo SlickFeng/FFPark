@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FFPark.Model</name>
+    </assembly>
+    <members>
+        <member name="P:FFPark.Model.BaseNavigationModuleModel.Title">
+            <summary>
+            Title
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.BaseNavigationModuleModel.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.BaseFFParkEntityModel.Id">
+            <summary>
+            Id 主键==>数据库主键
+            </summary>
+        </member>
+        <member name="T:FFPark.Model.PageModel`1">
+            <summary>
+            通用分页信息类
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModel`1.Page">
+            <summary>
+            当前页标
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModel`1.PageCount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModel`1.DataCount">
+            <summary>
+            数据总数
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModel`1.PageSize">
+            <summary>
+            每页大小
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModel`1.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModelDto.Page">
+            <summary>
+            当前页码
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModelDto.PageSize">
+            <summary>
+            每页显示数量
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModelDto.Key">
+            <summary>
+            搜索关键词
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PageModelDto.Flag">
+            <summary>
+            是否启用   999 代表全部, 0  启用 , 1  禁用
+            </summary>
+        </member>
+        <member name="T:FFPark.Model.User.BaseRoleModel">
+            <summary>
+            角色Model
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.User.BaseRoleModel.RoleDescription">
+            <summary>
+            默认密码
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.User.BaseUserModel.Password">
+            <summary>
+            默认密码
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.User.BaseUserModel.UserType">
+            <summary>
+            默认用户类型 1 系统管理用户 2  房东 3 租客
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.User.BaseUserModel.UserPhone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.User.BaseUserModel.PetName">
+            <summary>
+            用户昵称
+            </summary> 
+        </member>
+        <member name="P:FFPark.Model.User.BaseUserDto.PetName">
+            <summary>
+            用户昵称
+            </summary> 
+        </member>
+        <member name="P:FFPark.Model.User.BaseUserDto.Avatar">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.AdCurrencyPresentationModel.LayerName">
+            <summary>
+            广告展示位置
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.AdCurrencyPresentationModel.AdImageUrl">
+            <summary>
+            广告图片地址
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:FFPark.Model.AdCurrencyPresentationModel.AdName" -->
+        <member name="P:FFPark.Model.AdCurrencyPresentationModel.TargetHttpUrl">
+            <summary>
+            跳转Http 地址
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.AdCurrencyPresentationModel.SmallProgramTargetUrl">
+            <summary>
+            广告位跳转小程序地址
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.AdCurrencyPresentationModel.SortOrder">
+            <summary>
+            排序字段，越大越靠前
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.AdCurrencyPresentationModel.AdPositionId">
+            <summary>
+            广告位位置编号
+            </summary>
+        </member>
+        <member name="T:FFPark.Model.AdPositionModel">
+            <summary>
+            广告位置
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.AdPositionModel.PositionName">
+            <summary>
+            广告位置名称
+            </summary>
+        </member>
+        <member name="T:FFPark.Model.Park.BaseParkModel">
+            <summary>
+            车场信息Model
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkModel.ParkName">
+            <summary>
+            停车场简称
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkModel.ParkFullName">
+            <summary>
+            停车场全称
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkModel.DBPath">
+            <summary>
+            DB 连接字符串
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkModel.Extend">
+            <summary>
+            车场信息扩展
+            </summary>
+        </member>
+        <member name="T:FFPark.Model.Park.BaseParkExtenModel">
+            <summary>
+            车场扩展Model
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkExtenModel.Province">
+            <summary>
+            车场所在省份
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkExtenModel.City">
+            <summary>
+            车场所在城市
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkExtenModel.Region">
+            <summary>
+            车场所在区域
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkExtenModel.Street">
+            <summary>
+            车场所在街道
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkExtenModel.ParkAddress">
+            <summary>
+            车场详细地址
+            </summary>
+        </member>
+        <member name="T:FFPark.Model.Park.BaseParkDto">
+            <summary>
+            停车场信息列表Dto
+            </summary>
+        </member>
+        <member name="T:FFPark.Model.Park.BaseParkQueryDto">
+            <summary>
+            车场查询Dto
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkQueryDto.ParkName">
+            <summary>
+            车场名称
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkQueryDto.Province">
+            <summary>
+            车场所在省份
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkQueryDto.City">
+            <summary>
+            车场所在城市
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkQueryDto.Region">
+            <summary>
+            车场所在区域
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkQueryDto.Street">
+            <summary>
+            车场所在街道
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkQueryDto.ParkAddress">
+            <summary>
+            车场详细地址
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.Park.BaseParkQueryDto.IsDeleted">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.ParkTagModel.ParkId">
+            <summary>
+            车场ID
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.ParkTagModel.Title">
+            <summary>
+            车场标签
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.SpecialDiscountModel.DiscountTime">
+            <summary>
+            优惠时间---单位小时
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.SpecialDiscountModel.BeginTime">
+            <summary>
+            优惠券开始时间
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.SpecialDiscountModel.EndTime">
+            <summary>
+            优惠券结束时间
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.SpecialDiscountModel.SpecialDiscountName">
+            <summary>
+            优惠券名称
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PayChannelModel.ChannelName">
+            <summary>
+            通道名称
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PayChannelModel.ChannelFullName">
+            <summary>
+            通道全称
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.PayChannelModel.Remark">
+            <summary>
+            通道备注
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.CacheConfigModel.DefaultCacheTime">
+            <summary>
+            默认缓存时间，单位分钟
+            </summary>
+        </member>
+        <member name="P:FFPark.Model.WebChatModel.MerchId">
+            <summary>
+            商户号
+            </summary>
+        </member>
+    </members>
+</doc>

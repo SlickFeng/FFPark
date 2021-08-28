@@ -1,0 +1,9 @@
+﻿{
+  "Enabled": false,
+  "ConnectionString": "Redis 链接字符串",
+  "DatabaseId": 0,
+  "UseCaching": false,
+  "StoreDataProtectionKeys": false,
+  "StorePluginsInfo": false,
+  "IgnoreTimeoutException": false
+}

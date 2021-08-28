@@ -1,0 +1,10 @@
+﻿{
+  "MasterConnetion": "Data Source=.;Initial Catalog=CloudPark;Integrated Security=True",
+  "DataType": 1
+  //"SlaveConnections": [
+  //  {
+  //    //从库链接1
+  //    "ConnectionString": "Data Source=106.52.79.113;Initial Catalog=HouseCloud;Persist Security Info=True;User ID=sa;Password=sa2019"
+  //  }
+  // ]
+}
